@@ -1,5 +1,8 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
-<br />
+<div class="d-flex justify-content-center"><p class="display-1">Loja - chilligum</p></div>
 
-<a href="/produtos">Produtos</a>
+<div class="d-flex justify-content-center"><a href="/produtos" class="btn btn-primary">Produtos</a></div>
+
+<%= form_tag(produtos_path, method: :get) do %>
+  <%= text_field_tag :term %>
+  <%= submit_tag 'Search' %>
+<% end %>
