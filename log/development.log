@@ -496,3 +496,553 @@ Processing by ProdutosController#index as HTML
 Completed 200 OK in 44ms (Views: 33.2ms | ActiveRecord: 7.4ms)
 
 
+Started GET "/" for 172.18.0.1 at 2019-08-13 03:56:55 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "chilligum_development" does not exist
+):
+  
+activerecord (5.0.7.2) lib/active_record/connection_adapters/postgresql_adapter.rb:677:in `rescue in connect'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/postgresql_adapter.rb:672:in `connect'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.7.2) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.7.2) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.7.2) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.7.2) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.8ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.3ms)
+  [1m[35m (24.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (23.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6486077124488738805);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateProdutos (20190811012202)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (17.3ms)[0m  [1m[35mCREATE TABLE "produtos" ("id" serial primary key, "nome" character varying, "preco" float, "desc" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190811012202"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-08-13 03:57:34.135824"], ["updated_at", "2019-08-13 03:57:34.135824"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6486077124488738805)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 172.18.0.1 at 2019-08-13 03:57:46 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 163ms (Views: 155.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos" for 172.18.0.1 at 2019-08-13 03:57:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.5ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 42ms (Views: 32.9ms | ActiveRecord: 2.2ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6486077124488738805);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateProdutos (20190811012202)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE "produtos"[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190811012202"]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6486077124488738805)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6486077124488738805);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateProdutos (20190811012202)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.9ms)[0m  [1m[35mCREATE TABLE "produtos" ("id" serial primary key, "nome" character varying, "preco" float, "desc" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190811012202"]]
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddImageToProdutos (20190813040426)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "produtos" ADD "image" character varying[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190813040426"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6486077124488738805)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 172.18.0.1 at 2019-08-13 04:17:50 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+PG::ConnectionBad (FATAL:  could not open relation mapping file "global/pg_filenode.map": Permission denied
+):
+  
+pg (0.21.0) lib/pg.rb:56:in `initialize'
+pg (0.21.0) lib/pg.rb:56:in `new'
+pg (0.21.0) lib/pg.rb:56:in `connect'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/postgresql_adapter.rb:673:in `connect'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.7.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.7.2) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.7.2) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.7.2) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.7.2) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.5ms)
+Started GET "/" for 172.18.0.1 at 2019-08-13 04:18:48 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 209ms (Views: 200.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos" for 172.18.0.1 at 2019-08-13 04:18:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.7ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 62ms (Views: 53.6ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/produtos/new" for 172.18.0.1 at 2019-08-13 04:18:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/_form.html.erb (16.7ms)
+  Rendered produtos/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 54ms (Views: 44.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/produtos" for 172.18.0.1 at 2019-08-13 04:21:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProdutosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pq92wnyTYSZC4zdoSbbwsTMMtuvvAPM8euqbaCD/sA+CejtX6oRJMvwK6EtMXqA4AmhgxTHkuVBN0ctYzRX5iQ==", "produto"=>{"nome"=>"Touca", "preco"=>"1200.00", "desc"=>"Touca Maneira", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f93648b5610 @tempfile=#<Tempfile:/tmp/RackMultipart20190813-1-13mx7fw.png>, @original_filename="Captura de tela de 2019-07-29 13-38-14.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"produto[image]\"; filename=\"Captura de tela de 2019-07-29 13-38-14.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Produto"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "produtos" ("nome", "preco", "desc", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Touca"], ["preco", 1200.0], ["desc", "Touca Maneira"], ["created_at", "2019-08-13 04:21:16.420057"], ["updated_at", "2019-08-13 04:21:16.420057"], ["image", "#<ActionDispatch::Http::UploadedFile:0x00007f93648b5610>"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/produtos/1
+Completed 302 Found in 24ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/produtos/1" for 172.18.0.1 at 2019-08-13 04:21:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering produtos/show.html.erb within layouts/application
+  Rendered produtos/show.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_url' for nil:NilClass):
+    17: 
+    18: <p>
+    19:   <strong>Image:</strong>
+    20:   <%= image_tag(@user.image_url.to_s) %>
+    21: </p>
+    22: 
+    23: <%= link_to 'Edit', edit_produto_path(@produto) %> |
+  
+app/views/produtos/show.html.erb:20:in `_app_views_produtos_show_html_erb___1604026373963768005_70135510659040'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.6ms)
+Started GET "/produtos/1" for 172.18.0.1 at 2019-08-13 04:23:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduto Load (0.6ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering produtos/show.html.erb within layouts/application
+  Rendered produtos/show.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_url' for #<Produto:0x00007f93642c8c98>):
+    17: 
+    18: <p>
+    19:   <strong>Image:</strong>
+    20:   <%= image_tag(@produto.image_url.to_s) %>
+    21: </p>
+    22: 
+    23: <%= link_to 'Edit', edit_produto_path(@produto) %> |
+  
+app/views/produtos/show.html.erb:20:in `_app_views_produtos_show_html_erb___1604026373963768005_70135508720100'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.8ms)
+Started GET "/produtos/" for 172.18.0.1 at 2019-08-13 04:23:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 229ms (Views: 227.4ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/produtos/1" for 172.18.0.1 at 2019-08-13 04:23:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LWm+ZujORs8bOUq0i7Fcg8yOMc9QAHE4ucrbGwOWX3MJEp6LXsYYgaYfaE3xMbqPkYzwzshaMXn4Xd9USfERUw==", "id"=>"1"}
+  [1m[36mProduto Load (0.5ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "produtos" WHERE "produtos"."id" = $1[0m  [["id", 1]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/produtos
+Completed 302 Found in 8ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/produtos" for 172.18.0.1 at 2019-08-13 04:23:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/produtos/new" for 172.18.0.1 at 2019-08-13 04:23:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/_form.html.erb (16.0ms)
+  Rendered produtos/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 59ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos/new" for 172.18.0.1 at 2019-08-13 04:23:32 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/_form.html.erb (17.5ms)
+  Rendered produtos/new.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 253ms (Views: 231.0ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/produtos" for 172.18.0.1 at 2019-08-13 04:23:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TU7P4opc7jK7XgxJpbc3y4YszGJQnCB3Qv3PtC6Or7VpNe8PPFSwfAZ4LrDfN9HH2y4NY8jGYDYDasv7ZOnhlQ==", "produto"=>{"nome"=>"Touca", "preco"=>"13.45", "desc"=>"Touca Maneira", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f190c1358e0 @tempfile=#<Tempfile:/tmp/RackMultipart20190813-1-5bxrc5.jpeg>, @original_filename="atinfo.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"produto[image]\"; filename=\"atinfo.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Produto"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "produtos" ("nome", "preco", "desc", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Touca"], ["preco", 13.45], ["desc", "Touca Maneira"], ["created_at", "2019-08-13 04:23:45.121518"], ["updated_at", "2019-08-13 04:23:45.121518"], ["image", "#<ActionDispatch::Http::UploadedFile:0x00007f190c1358e0>"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/produtos/2
+Completed 302 Found in 9ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/produtos/2" for 172.18.0.1 at 2019-08-13 04:23:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduto Load (1.1ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering produtos/show.html.erb within layouts/application
+  Rendered produtos/show.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_url' for #<Produto:0x00007f190c19a268>):
+    17: 
+    18: <p>
+    19:   <strong>Image:</strong>
+    20:   <%= image_tag(@produto.image_url.to_s) %>
+    21: </p>
+    22: 
+    23: <%= link_to 'Edit', edit_produto_path(@produto) %> |
+  
+app/views/produtos/show.html.erb:20:in `_app_views_produtos_show_html_erb___2602675217033986165_69872776955800'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.7ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (19.8ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.1ms)
+Started GET "/produtos" for 172.18.0.1 at 2019-08-13 04:23:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/produtos" for 172.18.0.1 at 2019-08-13 04:29:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (1.3ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 226ms (Views: 207.1ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/produtos/2" for 172.18.0.1 at 2019-08-13 04:29:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduto Load (0.6ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering produtos/show.html.erb within layouts/application
+  Rendered produtos/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 55ms (Views: 45.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/uploads/produto/image/2/%23%3CActionDispatch%3A%3AHttp%3A%3AUploadedFile%3A0x00007f190c1358e0%3E" for 172.18.0.1 at 2019-08-13 04:29:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/produto/image/2/%23%3CActionDispatch%3A%3AHttp%3A%3AUploadedFile%3A0x00007f190c1358e0%3E"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered collection of /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [10 times] (5.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.6ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.4ms)
+Started GET "/uploads/produto/image/2/%23%3CActionDispatch%3A%3AHttp%3A%3AUploadedFile%3A0x00007f190c1358e0%3E" for 172.18.0.1 at 2019-08-13 04:29:19 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/produto/image/2/%23%3CActionDispatch%3A%3AHttp%3A%3AUploadedFile%3A0x00007f190c1358e0%3E"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered collection of /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [10 times] (3.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.2ms)
+Started DELETE "/produtos/2" for 172.18.0.1 at 2019-08-13 04:29:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UmY9eDcbED4eBeNMqDFnSbdwI5elqPVrMPLiJTRs2/t2HR2VgRNOcKMjwbXSsYFF6nLilj3ytSpxZeZqfguV2w==", "id"=>"2"}
+  [1m[36mProduto Load (1.8ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "produtos" WHERE "produtos"."id" = $1[0m  [["id", 2]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/produtos
+Completed 302 Found in 17ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/produtos" for 172.18.0.1 at 2019-08-13 04:29:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 48ms (Views: 45.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/produtos/new" for 172.18.0.1 at 2019-08-13 04:29:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#new as HTML
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/_form.html.erb (16.0ms)
+  Rendered produtos/new.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 59ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/produtos" for 172.18.0.1 at 2019-08-13 04:29:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tinTpeZ974fYfBYuV8FWTLP0jD75D3JqGgI6G+K/nzIK/J4wcGrHk2aVyQ1SKQbFgpBaECfrOAYtOWorD1XWtA==", "produto"=>{"nome"=>"Touca", "preco"=>"1200.00", "desc"=>"Touca Maneira", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f1a781456d8 @tempfile=#<Tempfile:/tmp/RackMultipart20190813-1-kgqaxo.png>, @original_filename="Captura de tela de 2019-07-29 13-38-14.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"produto[image]\"; filename=\"Captura de tela de 2019-07-29 13-38-14.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Produto"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "produtos" ("nome", "preco", "desc", "created_at", "updated_at", "image") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Touca"], ["preco", 1200.0], ["desc", "Touca Maneira"], ["created_at", "2019-08-13 04:29:33.085343"], ["updated_at", "2019-08-13 04:29:33.085343"], ["image", "Captura_de_tela_de_2019-07-29_13-38-14.png"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/produtos/3
+Completed 302 Found in 11ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/produtos/3" for 172.18.0.1 at 2019-08-13 04:29:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering produtos/show.html.erb within layouts/application
+  Rendered produtos/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 28ms (Views: 25.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/produtos" for 172.18.0.1 at 2019-08-13 04:29:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.5ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 172.18.0.1 at 2019-08-13 17:01:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 211ms (Views: 202.7ms | ActiveRecord: 0.0ms)
+
+

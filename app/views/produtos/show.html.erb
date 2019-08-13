@@ -15,5 +15,10 @@
   <%= @produto.desc %>
 </p>
 
+<p>
+  <strong>Image:</strong>
+  <%= image_tag(@produto.image_url.to_s) %>
+</p>
+
 <%= link_to 'Edit', edit_produto_path(@produto) %> |
 <%= link_to 'Back', produtos_path %>
