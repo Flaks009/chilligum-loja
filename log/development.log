@@ -1046,3 +1046,97 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 211ms (Views: 202.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/produtos" for 172.20.0.1 at 2019-08-14 13:43:23 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.6ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 218ms (Views: 202.4ms | ActiveRecord: 4.6ms)
+
+
+Started DELETE "/produtos/7" for 172.20.0.1 at 2019-08-14 13:43:26 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"m7plAeHidfD+TTSjoazwLAb7lrUOvCTwNjEAoJR/2aPSqlOI7iltapMvr6K+8FXNNtkJ34MZQfWh7uelDPPSlQ==", "id"=>"7"}
+  [1m[36mProduto Load (1.1ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "produtos" WHERE "produtos"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/produtos
+Completed 302 Found in 12ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/produtos" for 172.20.0.1 at 2019-08-14 13:43:26 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.5ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/produtos/8" for 172.20.0.1 at 2019-08-14 13:43:29 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"juUPfqopGj/1ZlhwR2XFnw/fVxzFhcWjKOdK324pgVDH9Tn3peICpZgEw3FYOWB+P/3IdkggoKa/OK3a9qWKZg==", "id"=>"8"}
+  [1m[36mProduto Load (1.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[31mDELETE FROM "produtos" WHERE "produtos"."id" = $1[0m  [["id", 8]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/produtos
+Completed 302 Found in 11ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/produtos" for 172.20.0.1 at 2019-08-14 13:43:29 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 51ms (Views: 49.4ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/produtos/9" for 172.20.0.1 at 2019-08-14 13:43:32 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"U5AdUnl3FJMBTkwZ7VtaXwan9wMTa26hauPffkoy7SsagCvbdrwMCWws1xjyB/++NoVoaZ7OC6T9PDh70r7mHQ==", "id"=>"9"}
+  [1m[36mProduto Load (0.8ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "produtos" WHERE "produtos"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/produtos
+Completed 302 Found in 7ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/produtos" for 172.20.0.1 at 2019-08-14 13:43:32 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.5ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 50ms (Views: 47.2ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/produtos/10" for 172.20.0.1 at 2019-08-14 13:43:34 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"IhawDaol4bV3iwKQjN+583lQHUPA2if01Afgv2R6kJZrBoaEpe75LxrpmZGTgxwSSXKCKU1/QvFD2Ae6/PaboA==", "id"=>"10"}
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "produtos" WHERE "produtos"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/produtos
+Completed 302 Found in 11ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/produtos" for 172.20.0.1 at 2019-08-14 13:43:34 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 54ms (Views: 49.8ms | ActiveRecord: 0.4ms)
+
+
