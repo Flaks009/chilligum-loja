@@ -4,7 +4,12 @@ class ProdutosController < ApplicationController
   # GET /produtos
   # GET /produtos.json
   def index
-    @produtos = Produto.all
+    @produtos = if params[:term]
+      Produto.where('nome ILIKE ?', "%#{params[:term]}%")
+    else
+      Produto.all
+    end
+
   end
 
   # GET /produtos/1
@@ -25,6 +30,7 @@ class ProdutosController < ApplicationController
   # POST /produtos.json
   def create
     @produto = Produto.new(produto_params)
+  
 
     respond_to do |format|
       if @produto.save
@@ -69,6 +75,6 @@ class ProdutosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def produto_params
-      params.require(:produto).permit(:nome, :preco, :desc, :image)
+      params.require(:produto).permit(:nome, :preco, :desc, :image, :term)
     end
 end
