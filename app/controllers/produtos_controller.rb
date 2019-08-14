@@ -7,7 +7,7 @@ class ProdutosController < ApplicationController
     @produtos = if params[:term]
       Produto.where('nome ILIKE ?', "%#{params[:term]}%")
     else
-      Produto.all
+      Produto.all.page(params['page']).per(3)
     end
 
   end
