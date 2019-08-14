@@ -5,7 +5,7 @@ class ProdutosController < ApplicationController
   # GET /produtos.json
   def index
     @produtos = if params[:term]
-      Produto.where('nome ILIKE ?', "%#{params[:term]}%")
+      Produto.where('nome ILIKE ?', "%#{params[:term]}%").page(params['page']).per(3)
     else
       Produto.all.page(params['page']).per(3)
     end

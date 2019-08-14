@@ -1420,3 +1420,168 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 172.20.0.1 at 2019-08-14 14:19:34 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 223ms (Views: 215.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos" for 172.20.0.1 at 2019-08-14 14:19:36 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.6ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 74ms (Views: 61.2ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/produtos?page=2" for 172.20.0.1 at 2019-08-14 14:19:38 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 3]]
+  Rendered produtos/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/produtos" for 172.20.0.1 at 2019-08-14 14:19:40 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 48ms (Views: 45.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/produtos/11" for 172.20.0.1 at 2019-08-14 14:19:45 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduto Load (0.6ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering produtos/show.html.erb within layouts/application
+  Rendered produtos/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 46ms (Views: 40.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/produtos" for 172.20.0.1 at 2019-08-14 14:19:47 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.5ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 62ms (Views: 58.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/produtos/12/edit" for 172.20.0.1 at 2019-08-14 14:19:48 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mProduto Load (0.5ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering produtos/edit.html.erb within layouts/application
+  Rendered produtos/_form.html.erb (15.6ms)
+  Rendered produtos/edit.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 61ms (Views: 58.0ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/produtos/12" for 172.20.0.1 at 2019-08-14 14:19:51 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c6+Y3U5R6re/12/JGcjTRwm5An8P7SV/q+Ny0wmVOLBvzDqH2n2smewjvQQlCX5lMwats5ThMl20hhS6tuJI7Q==", "produto"=>{"nome"=>"DDNADNAN", "preco"=>"12421.0", "desc"=>"dakfnalkf"}, "commit"=>"Update Produto", "id"=>"12"}
+  [1m[36mProduto Load (0.6ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/produtos/12
+Completed 302 Found in 8ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/produtos/12" for 172.20.0.1 at 2019-08-14 14:19:51 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering produtos/show.html.erb within layouts/application
+  Rendered produtos/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/produtos" for 172.20.0.1 at 2019-08-14 14:19:53 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 35ms (Views: 31.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 172.20.0.1 at 2019-08-14 14:20:05 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos?utf8=%E2%9C%93&term=d&commit=Search" for 172.20.0.1 at 2019-08-14 14:20:08 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"d", "commit"=>"Search"}
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.8ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos" WHERE (nome ILIKE '%d%')[0m
+  Rendered produtos/index.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `total_pages' for #<Produto::ActiveRecord_Relation:0x00007f8515792268>):
+    31: <br>
+    32: 
+    33: <%= link_to 'New Produto', new_produto_path %>
+    34: <%= paginate @produtos %>
+  
+app/views/produtos/index.html.erb:34:in `_app_views_produtos_index_html_erb___1518486200933047719_70104783795880'
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.6ms)
+Started GET "/" for 172.20.0.1 at 2019-08-14 14:21:20 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 203ms (Views: 195.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos?utf8=%E2%9C%93&term=&commit=Search" for 172.20.0.1 at 2019-08-14 14:21:21 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"", "commit"=>"Search"}
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (1.0ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE (nome ILIKE '%%') LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "produtos" WHERE (nome ILIKE '%%')[0m
+  Rendered produtos/index.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 59ms (Views: 44.9ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/produtos?utf8=%E2%9C%93&term=s&commit=Search" for 172.20.0.1 at 2019-08-14 14:21:26 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"s", "commit"=>"Search"}
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE (nome ILIKE '%s%') LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  Rendered produtos/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.4ms)
+
+
