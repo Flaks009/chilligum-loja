@@ -1,4 +1,5 @@
 class ProdutosController < ApplicationController
+  before_action :authenticate_user!, only: [:edit, :create, :new, :update, :destroy]
   before_action :set_produto, only: [:show, :edit, :update, :destroy]
 
   # GET /produtos
@@ -30,6 +31,7 @@ class ProdutosController < ApplicationController
   # POST /produtos.json
   def create
     @produto = Produto.new(produto_params)
+    @produto.user = current_user
   
 
     respond_to do |format|
@@ -75,6 +77,6 @@ class ProdutosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def produto_params
-      params.require(:produto).permit(:nome, :preco, :desc, :image, :term)
+      params.require(:produto).permit(:nome, :preco, :desc, :image, :term, :user)
     end
 end
