@@ -9,6 +9,7 @@
       <th>Preco</th>
       <th>Desc</th>
       <th>Image</th>
+      <th>Vendedor</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,6 +21,8 @@
         <td><%= produto.preco %></td>
         <td><%= produto.desc %></td>
         <td><%= produto.image %></td>
+        <td><%= produto.user.name %></td>
+        
         <td><%= link_to 'Show', produto %></td>
         <td><%= link_to 'Edit', edit_produto_path(produto) %></td>
         <td><%= link_to 'Destroy', produto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
