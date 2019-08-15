@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class ProdutosControllerTest < ActionDispatch::IntegrationTest
@@ -5,17 +7,17 @@ class ProdutosControllerTest < ActionDispatch::IntegrationTest
     @produto = produtos(:one)
   end
 
-  test "should get index" do
+  test 'should get index' do
     get produtos_url
     assert_response :success
   end
 
-  test "should get new" do
+  test 'should get new' do
     get new_produto_url
     assert_response :success
   end
 
-  test "should create produto" do
+  test 'should create produto' do
     assert_difference('Produto.count') do
       post produtos_url, params: { produto: { desc: @produto.desc, nome: @produto.nome, preco: @produto.preco } }
     end
@@ -23,22 +25,22 @@ class ProdutosControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to produto_url(Produto.last)
   end
 
-  test "should show produto" do
+  test 'should show produto' do
     get produto_url(@produto)
     assert_response :success
   end
 
-  test "should get edit" do
+  test 'should get edit' do
     get edit_produto_url(@produto)
     assert_response :success
   end
 
-  test "should update produto" do
+  test 'should update produto' do
     patch produto_url(@produto), params: { produto: { desc: @produto.desc, nome: @produto.nome, preco: @produto.preco } }
     assert_redirected_to produto_url(@produto)
   end
 
-  test "should destroy produto" do
+  test 'should destroy produto' do
     assert_difference('Produto.count', -1) do
       delete produto_url(@produto)
     end
