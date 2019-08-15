@@ -5304,3 +5304,262 @@ Processing by ProdutosController#index as HTML
 Completed 200 OK in 41ms (Views: 36.3ms | ActiveRecord: 3.0ms)
 
 
+Started GET "/produtos/new" for 172.20.0.1 at 2019-08-15 00:12:40 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProdutosController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/_form.html.erb (21.0ms)
+  Rendered produtos/new.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 284ms (Views: 233.5ms | ActiveRecord: 8.6ms)
+
+
+Started POST "/produtos" for 172.20.0.1 at 2019-08-15 00:12:47 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4BXqscB7lAdJo0t3eTQUceNTuS6c8az6WQ3EPid8rdKOmV1zA+ZIq8f7bJwg6Ys1R+NACRa7GPAYzBs/RqYqjg==", "produto"=>{"nome"=>"PC", "preco"=>"dasd", "desc"=>"Touca Maneira"}, "commit"=>"Create Produto"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/_form.html.erb (3.3ms)
+  Rendered produtos/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 57ms (Views: 41.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/produtos" for 172.20.0.1 at 2019-08-15 00:15:27 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.6ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (59.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 283ms (Views: 256.9ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/produtos/new" for 172.20.0.1 at 2019-08-15 00:15:30 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/_form.html.erb (13.1ms)
+  Rendered produtos/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 52ms (Views: 48.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/produtos" for 172.20.0.1 at 2019-08-15 00:15:36 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DcRCxOz9FqqeFl2Uz3X0dNQ9rejuWvKTmIXP3/5XJXVjSPUGL2DKBhBOen+WqGswcI1Uz2QQRpnZRBDen42iKQ==", "produto"=>{"nome"=>"a", "preco"=>"dasa", "desc"=>"cassad"}, "commit"=>"Create Produto"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  Rendering produtos/new.html.erb within layouts/application
+  Rendered produtos/_form.html.erb (4.9ms)
+  Rendered produtos/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 42ms (Views: 33.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/produtos" for 172.20.0.1 at 2019-08-15 00:15:58 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.5ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (25.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 68ms (Views: 64.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/produtos?page=2" for 172.20.0.1 at 2019-08-15 00:16:45 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 3]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered produtos/index.html.erb within layouts/application (26.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 67ms (Views: 62.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/produtos" for 172.20.0.1 at 2019-08-15 00:16:50 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.6ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (35.8ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 75ms (Views: 69.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/produtos/18/edit" for 172.20.0.1 at 2019-08-15 00:16:52 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#edit as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProduto Load (0.3ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering produtos/edit.html.erb within layouts/application
+  Rendered produtos/_form.html.erb (3.9ms)
+  Rendered produtos/edit.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 35ms (Views: 30.7ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/produtos/18" for 172.20.0.1 at 2019-08-15 00:16:56 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oQBFjzcyM8MZGYl23VpqeMvG3WHVguZz5/4iWsZGvPv1/PpvM5OVvMIAeka7OeSrQILRpHHWjZ+TktFYz5ZIYA==", "produto"=>{"nome"=>"TOUCA", "preco"=>"1200.dad", "desc"=>"Touca Maneira"}, "commit"=>"Update Produto", "id"=>"18"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering produtos/edit.html.erb within layouts/application
+  Rendered produtos/_form.html.erb (3.0ms)
+  Rendered produtos/edit.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 39ms (Views: 28.4ms | ActiveRecord: 2.8ms)
+
+
+Started PATCH "/produtos/18" for 172.20.0.1 at 2019-08-15 00:17:00 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aBf1Em/aFY2hlHZugl48hI5W8Aanh3O6df/75N1ojhflTjwgo25m+e5SoV5wgnKaUvjik34tXfAynlDoDIuNVg==", "produto"=>{"nome"=>"TOUCA", "preco"=>"1200.0", "desc"=>"Touca Maneira"}, "commit"=>"Update Produto", "id"=>"18"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/produtos/18
+Completed 302 Found in 10ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/produtos/18" for 172.20.0.1 at 2019-08-15 00:17:00 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" WHERE "produtos"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering produtos/show.html.erb within layouts/application
+  Rendered produtos/show.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/produtos" for 172.20.0.1 at 2019-08-15 00:17:04 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.5ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (20.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 50ms (Views: 46.0ms | ActiveRecord: 1.8ms)
+
+
+Started DELETE "/users/sign_out" for 172.20.0.1 at 2019-08-15 00:29:17 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LCcDF3ddnOOpORMnCR19RxT/eeufZqh7o6XwP7Z7q6ihfsolu+nvl+b/xBf7wTNZyFFrfkbMhjHkxFszZ5io6Q=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 35ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/" for 172.20.0.1 at 2019-08-15 00:29:17 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 208ms (Views: 206.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.20.0.1 at 2019-08-15 00:29:19 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 61ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 172.20.0.1 at 2019-08-15 00:29:27 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qu4dHYoznhGof7Ri7+cKrr7Ei99auTvUMRgGITZtoRVlt3jIvyDVwtLdBq/07br8PjDbm4ZxurapgSZ72fHUZg==", "user"=>{"email"=>"brunomaranini@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "brunomaranini@hotmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 176ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 172.20.0.1 at 2019-08-15 00:29:27 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/produtos" for 172.20.0.1 at 2019-08-15 00:31:02 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.6ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (59.2ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 401 Unauthorized in 123ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/produtos" for 172.20.0.1 at 2019-08-15 00:31:02 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#index as HTML
+  Rendering produtos/index.html.erb within layouts/application
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT  "produtos".* FROM "produtos" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "produtos"[0m
+  Rendered produtos/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 75ms (Views: 70.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/produtos/new" for 172.20.0.1 at 2019-08-15 00:31:09 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProdutosController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 172.20.0.1 at 2019-08-15 00:31:09 +0000
+Cannot render console from 172.20.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
