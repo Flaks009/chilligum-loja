@@ -47,11 +47,16 @@ class ProdutosController < ApplicationController
 
   # DELETE /produtos/1
   def destroy
-    @produto.destroy
     respond_to do |format|
-      format.html { redirect_to produtos_url, notice: 'Produto was successfully destroyed.' }
+      if @produto.user == current_user
+        @produto.destroy
+        format.html { redirect_to produtos_url, notice: 'Produto was successfully destroyed.' }
+      else
+        format.html { redirect_to produtos_url, notice: 'An Error Occurred!'}
+      end
     end
   end
+    
 
   private
 
