@@ -7,16 +7,16 @@ class ProdutosController < ApplicationController
   before_action :set_produto, only: %i[show edit update destroy]
 
   # GET /produtos
-   def index
+  def index
     @produtos = if params[:term]
                   Produto.where('nome ILIKE ?', "%#{params[:term]}%").page(params['page']).per(3)
                 else
                   Produto.all.page(params['page']).per(3)
                 end
-  end
+ end
 
   def meus_produtos
-      @produtos = Produto.where('user_id = ?', "%#{params[:user]}%").page(params['page']).per(3)
+    @produtos = Produto.where('user_id = ?', "%#{params[:user]}%").page(params['page']).per(3)
   end
 
   # GET /produtos/new
@@ -56,11 +56,10 @@ class ProdutosController < ApplicationController
         @produto.destroy
         format.html { redirect_to produtos_url, notice: 'Produto was successfully destroyed.' }
       else
-        format.html { redirect_to produtos_url, notice: 'An Error Occurred!'}
+        format.html { redirect_to produtos_url, notice: 'An Error Occurred!' }
       end
     end
   end
-
 
   private
 

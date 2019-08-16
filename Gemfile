@@ -45,9 +45,9 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
+gem 'bootstrap_form', '>= 4.2.0'
 gem 'carrierwave'
 gem 'devise'
 gem 'kaminari'
 gem 'mini_magick'
 gem 'rubocop', require: false
-gem "bootstrap_form", ">= 4.2.0"
