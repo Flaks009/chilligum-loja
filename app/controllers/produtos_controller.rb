@@ -15,10 +15,6 @@ class ProdutosController < ApplicationController
                 end
  end
 
-  def meus_produtos
-    @produtos = Produto.where('user_id = ?', "%#{params[:user]}%").page(params['page']).per(3)
-  end
-
   # GET /produtos/new
   def new
     @produto = Produto.new
