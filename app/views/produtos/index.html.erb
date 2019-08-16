@@ -2,14 +2,15 @@
 
 <h1>Produtos</h1>
 
-<table>
+<table class = "table">
   <thead>
     <tr>
       <th>Nome</th>
       <th>Preco</th>
-      <th>Desc</th>
+      <th>Descrição</th>
       <th>Image</th>
       <th>Vendedor</th>
+      <th>Telefone</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,12 +21,15 @@
         <td><%= produto.nome %></td>
         <td><%= produto.preco %></td>
         <td><%= produto.desc %></td>
-        <td><%= produto.image %></td>
+        <td><%= image_tag produto.image_url(:thumb) if produto.image.present? %></td>
         <td><%= produto.user.name %></td>
+        <td><%= produto.user.tel %></td>
         
         <td><%= link_to 'Show', produto %></td>
+        <% if current_user == produto.user %>
         <td><%= link_to 'Edit', edit_produto_path(produto) %></td>
         <td><%= link_to 'Destroy', produto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>

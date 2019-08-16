@@ -3,7 +3,7 @@
 # ProdutosController - Controlador pagina produtos
 
 class ProdutosController < ApplicationController
-  before_action :authenticate_user!, only: %i[edit create new update destroy]
+  before_action :authenticate_user!, only: %i[edit create new update destroy meus_produtos]
   before_action :set_produto, only: %i[show edit update destroy]
 
   # GET /produtos
@@ -13,6 +13,10 @@ class ProdutosController < ApplicationController
                 else
                   Produto.all.page(params['page']).per(3)
                 end
+  end
+
+  def meus_produtos
+      @produtos = Produto.where('user_id = ?', "%#{params[:user]}%").page(params['page']).per(3)
   end
 
   # GET /produtos/new
@@ -56,7 +60,7 @@ class ProdutosController < ApplicationController
       end
     end
   end
-    
+
 
   private
 
