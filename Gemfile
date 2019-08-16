@@ -50,3 +50,4 @@ gem 'devise'
 gem 'kaminari'
 gem 'mini_magick'
 gem 'rubocop', require: false
+gem "bootstrap_form", ">= 4.2.0"

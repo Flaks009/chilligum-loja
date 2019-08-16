@@ -7,7 +7,6 @@
     <tr>
       <th>Nome</th>
       <th>Preco</th>
-      <th>Descrição</th>
       <th>Image</th>
       <th>Vendedor</th>
       <th>Telefone</th>
@@ -20,15 +19,14 @@
       <tr>
         <td><%= produto.nome %></td>
         <td><%= produto.preco %></td>
-        <td><%= produto.desc %></td>
         <td><%= image_tag produto.image_url(:thumb) if produto.image.present? %></td>
         <td><%= produto.user.name %></td>
         <td><%= produto.user.tel %></td>
-        
-        <td><%= link_to 'Show', produto %></td>
+        <td><%= link_to 'Detalhes', produto %></td>
         <% if current_user == produto.user %>
-        <td><%= link_to 'Edit', edit_produto_path(produto) %></td>
-        <td><%= link_to 'Destroy', produto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Editar', edit_produto_path(produto) %></td>
+        <td><%= link_to 'Excluir', produto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
         <% end %>
       </tr>
     <% end %>
@@ -37,5 +35,5 @@
 
 <br>
 
-<%= link_to 'New Produto', new_produto_path %>
-<%= paginate @produtos %>
+<div class="container"><div class="d-flex justify-content-center"><%= link_to 'Cadastre o seu produto!', new_produto_path, :class => 'lead font-weight-bold' %></div></div>
+<div class="container"><div class="d-flex justify-content-center"><%= paginate @produtos %></div></div>

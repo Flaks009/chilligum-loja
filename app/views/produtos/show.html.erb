@@ -1,24 +1,49 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Nome:</strong>
+<div class="row d-flex justify-content-center">
+<p class="display-1">
   <%= @produto.nome %>
 </p>
+</div>
 
-<p>
-  <strong>Preco:</strong>
-  <%= @produto.preco %>
+<div class="row d-flex justify-content-center">
+<p class="display-3">
+  R$: <%= @produto.preco %>
 </p>
+</div>
 
+<div class="row d-flex justify-content-center">
 <p>
-  <strong>Desc:</strong>
+  <strong>Descrição</strong>
   <%= @produto.desc %>
 </p>
-
+</div>
+<div class="row d-flex justify-content-center">
 <p>
-  <strong>Image:</strong>
-  <%= image_tag(@produto.image_url.to_s) %>
+  <strong>Vendedor</strong>
+  <%= @produto.user.name%>
 </p>
+</div>
+<div class="row d-flex justify-content-center">
+<p>
+  <strong>Telefone</strong>
+   <%= @produto.user.tel%>
+</p>
+</div>
+
+<div class="row d-flex justify-content-center">
+<p> 
+  <%= image_tag @produto.image_url(:profile) if @produto.image.present? %>
+</p>
+</div>
+
+<div class="row d-flex justify-content-center">
+<% if current_user == @produto.user %>
+<p><%= link_to 'Editar', edit_produto_path(@produto) %></p>
+<p><%= link_to 'Excluir', @produto, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+<% end %>
+</div>
+
 
 <%= link_to 'Edit', edit_produto_path(@produto) %> |
 <%= link_to 'Back', produtos_path %>
